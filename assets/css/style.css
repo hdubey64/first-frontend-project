@@ -1,0 +1,255 @@
+:root {
+   --blueColor: #0d6efd;
+   --blackColor: #212529;
+   --graycolor: #f8f9fa;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.heroSection {
+   height: 80vh;
+   background-color: var(--blackColor);
+   margin: -70px 0 0 0;
+   display: flex;
+   align-items: center;
+}
+.bg-light {
+   /* background: transparent !important; */
+   background-color: var(--blackColor) !important;
+}
+
+.heroSection .heading {
+   font-size: 2.8rem;
+   font-weight: bold;
+   color: white;
+   margin-bottom: 15px;
+}
+.heroText p {
+   color: #979da3;
+   font-size: 1.2rem;
+   margin-bottom: 20px;
+}
+.sarvicesSection {
+   margin-top: 90px;
+}
+.icon {
+   background-color: var(--blueColor);
+   height: 50px;
+   width: 48px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+}
+.icon img {
+   width: 30px;
+}
+.sarvicesSection .heading {
+   font-size: 2rem;
+   font-weight: bold;
+}
+.iconheading {
+   font-size: 1.3rem;
+   margin-top: 15px;
+}
+.aboutSection {
+   margin-top: 75px;
+   background-color: var(--graycolor);
+   height: 60vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.para p {
+   max-width: 525px;
+   font-size: 1.5rem;
+   font-style: italic;
+   text-align: center;
+}
+.profile1 {
+   display: flex;
+   align-items: center;
+}
+
+.blogSection {
+   padding: 70px 0;
+}
+.blogSection .card {
+   margin: 0 auto;
+}
+.blog {
+   margin: 35px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.blog p {
+   max-width: 525px;
+   font-size: 1.2rem;
+   text-align: center;
+   color: #6c757d;
+}
+.blog h2 {
+   font-size: 2rem;
+}
+.fw-bold {
+   font-weight: 700;
+}
+.profile {
+   margin-top: 75px;
+   display: flex;
+   align-items: center;
+   height: 60px;
+}
+.text-muted {
+   font-size: 0.875rem;
+}
+.contact {
+   height: 100%;
+   background-color: var(--blueColor);
+   border-radius: 7px;
+
+   padding: 40px 0 !important;
+}
+.row1 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 60px;
+}
+.row1 h3 {
+   color: white;
+}
+.row1 p {
+   color: #8db7fe;
+}
+.input {
+   padding: 7px 10px;
+   border-radius: 5px;
+   width: 220px;
+   border: 1px solid white;
+}
+.signup {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   align-items: flex-end;
+}
+.signupbtn {
+   border: 1px solid white;
+   margin-left: -10px;
+   margin-bottom: 3px;
+   padding: 7px 14px;
+   margin-top: -1px;
+}
+.small {
+   color: #8db7fe;
+}
+.footerSection {
+   background-color: var(--blackColor);
+   margin-top: 125px;
+   height: 12vh;
+   display: flex;
+   align-items: center;
+}
+.footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: white;
+}
+@media (max-width: 1200px) {
+   .contactSection {
+      text-align: center;
+   }
+   .signup {
+      align-items: center;
+   }
+   .row1 {
+      padding: 0;
+   }
+   .bottons button:nth-child(1) {
+      margin-right: 20px;
+   }
+}
+@media (max-width: 998px) {
+   .heroImage {
+      display: none;
+   }
+   .heroText {
+      text-align: center;
+   }
+   header {
+      padding: 0 !important;
+   }
+   .blogcol {
+      padding: 20px 30px;
+   }
+}
+
+@media (max-width: 758px) {
+   .sarvicesSection {
+      padding: 0 40px;
+   }
+   .sarvicesSection .heading {
+      font-size: 1.6rem;
+      margin-bottom: 40px;
+   }
+   .aboutSection {
+      padding: 0 40px;
+   }
+   .para p {
+      font-size: 1.3rem;
+   }
+}
+
+@media (max-width: 558px) {
+   .heroSection {
+      height: 90vh;
+      padding-top: 70px;
+   }
+   .heroSection .heading {
+      font-size: 2.1rem;
+   }
+   .heroSection p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+   }
+   .contactSection {
+      padding: 0 30px;
+   }
+   .contact {
+      padding: 20px !important;
+      text-align: center;
+   }
+   .input {
+      width: 175px;
+      margin: 0 auto !important;
+   }
+   .row1 {
+      padding: 0 20px;
+   }
+   .bottons {
+      display: flex;
+      flex-direction: column;
+   }
+   .bottons button {
+      margin-bottom: 20px;
+   }
+   .bottons button:nth-child(1) {
+      margin-right: 0;
+   }
+   .footer {
+      flex-direction: column;
+      justify-content: flex-start;
+   }
+   .footer p {
+      margin: 0;
+   }
+}
