@@ -9,6 +9,11 @@
    box-sizing: border-box;
    scroll-behavior: smooth;
 }
+header {
+   position: sticky;
+   top: 0;
+   z-index: 10;
+}
 
 .heroSection {
    height: 80vh;
